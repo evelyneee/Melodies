@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF1525AA67480090E930 /* MelodiesApp.swift */; };
+		324CAF1825AA67480090E930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF1725AA67480090E930 /* ContentView.swift */; };
+		324CAF1A25AA674A0090E930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324CAF1925AA674A0090E930 /* Assets.xcassets */; };
+		324CAF1D25AA674A0090E930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324CAF1C25AA674A0090E930 /* Preview Assets.xcassets */; };
+		324CAF2925AA674B0090E930 /* MelodiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF2825AA674B0090E930 /* MelodiesTests.swift */; };
+		324CAF3425AA674B0090E930 /* MelodiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF3325AA674B0090E930 /* MelodiesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		324CAF2525AA674B0090E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324CAF0A25AA67480090E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324CAF1125AA67480090E930;
+			remoteInfo = Melodies;
+		};
+		324CAF3025AA674B0090E930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 324CAF0A25AA67480090E930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324CAF1125AA67480090E930;
+			remoteInfo = Melodies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		324CAF1225AA67480090E930 /* Melodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		324CAF1525AA67480090E930 /* MelodiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodiesApp.swift; sourceTree = "<group>"; };
+		324CAF1725AA67480090E930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		324CAF1925AA674A0090E930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		324CAF1C25AA674A0090E930 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		324CAF1E25AA674A0090E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324CAF1F25AA674A0090E930 /* Melodies.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Melodies.entitlements; sourceTree = "<group>"; };
+		324CAF2425AA674B0090E930 /* MelodiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelodiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		324CAF2825AA674B0090E930 /* MelodiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodiesTests.swift; sourceTree = "<group>"; };
+		324CAF2A25AA674B0090E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324CAF2F25AA674B0090E930 /* MelodiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelodiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		324CAF3325AA674B0090E930 /* MelodiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodiesUITests.swift; sourceTree = "<group>"; };
+		324CAF3525AA674B0090E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324CAF0F25AA67480090E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2125AA674B0090E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2C25AA674B0090E930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324CAF0925AA67480090E930 = {
+			isa = PBXGroup;
+			children = (
+				324CAF1425AA67480090E930 /* Melodies */,
+				324CAF2725AA674B0090E930 /* MelodiesTests */,
+				324CAF3225AA674B0090E930 /* MelodiesUITests */,
+				324CAF1325AA67480090E930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		324CAF1325AA67480090E930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF1225AA67480090E930 /* Melodies.app */,
+				324CAF2425AA674B0090E930 /* MelodiesTests.xctest */,
+				324CAF2F25AA674B0090E930 /* MelodiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324CAF1425AA67480090E930 /* Melodies */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF1525AA67480090E930 /* MelodiesApp.swift */,
+				324CAF1725AA67480090E930 /* ContentView.swift */,
+				324CAF1925AA674A0090E930 /* Assets.xcassets */,
+				324CAF1E25AA674A0090E930 /* Info.plist */,
+				324CAF1F25AA674A0090E930 /* Melodies.entitlements */,
+				324CAF1B25AA674A0090E930 /* Preview Content */,
+			);
+			path = Melodies;
+			sourceTree = "<group>";
+		};
+		324CAF1B25AA674A0090E930 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF1C25AA674A0090E930 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		324CAF2725AA674B0090E930 /* MelodiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF2825AA674B0090E930 /* MelodiesTests.swift */,
+				324CAF2A25AA674B0090E930 /* Info.plist */,
+			);
+			path = MelodiesTests;
+			sourceTree = "<group>";
+		};
+		324CAF3225AA674B0090E930 /* MelodiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF3325AA674B0090E930 /* MelodiesUITests.swift */,
+				324CAF3525AA674B0090E930 /* Info.plist */,
+			);
+			path = MelodiesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324CAF1125AA67480090E930 /* Melodies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324CAF3825AA674B0090E930 /* Build configuration list for PBXNativeTarget "Melodies" */;
+			buildPhases = (
+				324CAF0E25AA67480090E930 /* Sources */,
+				324CAF0F25AA67480090E930 /* Frameworks */,
+				324CAF1025AA67480090E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Melodies;
+			productName = Melodies;
+			productReference = 324CAF1225AA67480090E930 /* Melodies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		324CAF2325AA674B0090E930 /* MelodiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324CAF3B25AA674B0090E930 /* Build configuration list for PBXNativeTarget "MelodiesTests" */;
+			buildPhases = (
+				324CAF2025AA674B0090E930 /* Sources */,
+				324CAF2125AA674B0090E930 /* Frameworks */,
+				324CAF2225AA674B0090E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				324CAF2625AA674B0090E930 /* PBXTargetDependency */,
+			);
+			name = MelodiesTests;
+			productName = MelodiesTests;
+			productReference = 324CAF2425AA674B0090E930 /* MelodiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		324CAF2E25AA674B0090E930 /* MelodiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324CAF3E25AA674B0090E930 /* Build configuration list for PBXNativeTarget "MelodiesUITests" */;
+			buildPhases = (
+				324CAF2B25AA674B0090E930 /* Sources */,
+				324CAF2C25AA674B0090E930 /* Frameworks */,
+				324CAF2D25AA674B0090E930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				324CAF3125AA674B0090E930 /* PBXTargetDependency */,
+			);
+			name = MelodiesUITests;
+			productName = MelodiesUITests;
+			productReference = 324CAF2F25AA674B0090E930 /* MelodiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324CAF0A25AA67480090E930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					324CAF1125AA67480090E930 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					324CAF2325AA674B0090E930 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 324CAF1125AA67480090E930;
+					};
+					324CAF2E25AA674B0090E930 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 324CAF1125AA67480090E930;
+					};
+				};
+			};
+			buildConfigurationList = 324CAF0D25AA67480090E930 /* Build configuration list for PBXProject "Melodies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 324CAF0925AA67480090E930;
+			productRefGroup = 324CAF1325AA67480090E930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324CAF1125AA67480090E930 /* Melodies */,
+				324CAF2325AA674B0090E930 /* MelodiesTests */,
+				324CAF2E25AA674B0090E930 /* MelodiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		324CAF1025AA67480090E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324CAF1D25AA674A0090E930 /* Preview Assets.xcassets in Resources */,
+				324CAF1A25AA674A0090E930 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2225AA674B0090E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2D25AA674B0090E930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324CAF0E25AA67480090E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324CAF1825AA67480090E930 /* ContentView.swift in Sources */,
+				324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2025AA674B0090E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324CAF2925AA674B0090E930 /* MelodiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324CAF2B25AA674B0090E930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324CAF3425AA674B0090E930 /* MelodiesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		324CAF2625AA674B0090E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324CAF1125AA67480090E930 /* Melodies */;
+			targetProxy = 324CAF2525AA674B0090E930 /* PBXContainerItemProxy */;
+		};
+		324CAF3125AA674B0090E930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324CAF1125AA67480090E930 /* Melodies */;
+			targetProxy = 324CAF3025AA674B0090E930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		324CAF3625AA674B0090E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		324CAF3725AA674B0090E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		324CAF3925AA674B0090E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Melodies/Melodies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Melodies/Preview Content\"";
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Melodies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = althio.Melodies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		324CAF3A25AA674B0090E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Melodies/Melodies.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Melodies/Preview Content\"";
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Melodies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = althio.Melodies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		324CAF3C25AA674B0090E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				INFOPLIST_FILE = MelodiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = althio.MelodiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Melodies.app/Contents/MacOS/Melodies";
+			};
+			name = Debug;
+		};
+		324CAF3D25AA674B0090E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				INFOPLIST_FILE = MelodiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = althio.MelodiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Melodies.app/Contents/MacOS/Melodies";
+			};
+			name = Release;
+		};
+		324CAF3F25AA674B0090E930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				INFOPLIST_FILE = MelodiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = althio.MelodiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Melodies;
+			};
+			name = Debug;
+		};
+		324CAF4025AA674B0090E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = UUGF4RZ8S8;
+				INFOPLIST_FILE = MelodiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = althio.MelodiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Melodies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324CAF0D25AA67480090E930 /* Build configuration list for PBXProject "Melodies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324CAF3625AA674B0090E930 /* Debug */,
+				324CAF3725AA674B0090E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324CAF3825AA674B0090E930 /* Build configuration list for PBXNativeTarget "Melodies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324CAF3925AA674B0090E930 /* Debug */,
+				324CAF3A25AA674B0090E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324CAF3B25AA674B0090E930 /* Build configuration list for PBXNativeTarget "MelodiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324CAF3C25AA674B0090E930 /* Debug */,
+				324CAF3D25AA674B0090E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324CAF3E25AA674B0090E930 /* Build configuration list for PBXNativeTarget "MelodiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324CAF3F25AA674B0090E930 /* Debug */,
+				324CAF4025AA674B0090E930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 324CAF0A25AA67480090E930 /* Project object */;
+}
