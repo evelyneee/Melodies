@@ -9,8 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                Spacer()
+                NavigationLink(destination: LibraryView()) {
+                    HStack {
+                        Image(systemName: "music.note")
+                            .font(.title3)
+                        Text("Library")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+
+                }
+            }
+            .listStyle(SidebarListStyle())
+        }
     }
 }
 

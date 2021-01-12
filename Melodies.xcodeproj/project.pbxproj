@@ -13,6 +13,7 @@
 		324CAF1D25AA674A0090E930 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324CAF1C25AA674A0090E930 /* Preview Assets.xcassets */; };
 		324CAF2925AA674B0090E930 /* MelodiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF2825AA674B0090E930 /* MelodiesTests.swift */; };
 		324CAF3425AA674B0090E930 /* MelodiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF3325AA674B0090E930 /* MelodiesUITests.swift */; };
+		324CAF4B25AA679F0090E930 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF4A25AA679F0090E930 /* LibraryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		324CAF2F25AA674B0090E930 /* MelodiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelodiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324CAF3325AA674B0090E930 /* MelodiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodiesUITests.swift; sourceTree = "<group>"; };
 		324CAF3525AA674B0090E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324CAF4A25AA679F0090E930 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		324CAF5125AA82DC0090E930 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,7 @@
 				324CAF2725AA674B0090E930 /* MelodiesTests */,
 				324CAF3225AA674B0090E930 /* MelodiesUITests */,
 				324CAF1325AA67480090E930 /* Products */,
+				324CAF5025AA82DC0090E930 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +102,7 @@
 			children = (
 				324CAF1525AA67480090E930 /* MelodiesApp.swift */,
 				324CAF1725AA67480090E930 /* ContentView.swift */,
+				324CAF4A25AA679F0090E930 /* LibraryView.swift */,
 				324CAF1925AA674A0090E930 /* Assets.xcassets */,
 				324CAF1E25AA674A0090E930 /* Info.plist */,
 				324CAF1F25AA674A0090E930 /* Melodies.entitlements */,
@@ -130,6 +135,14 @@
 				324CAF3525AA674B0090E930 /* Info.plist */,
 			);
 			path = MelodiesUITests;
+			sourceTree = "<group>";
+		};
+		324CAF5025AA82DC0090E930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				324CAF5125AA82DC0090E930 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324CAF1825AA67480090E930 /* ContentView.swift in Sources */,
+				324CAF4B25AA679F0090E930 /* LibraryView.swift in Sources */,
 				324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
