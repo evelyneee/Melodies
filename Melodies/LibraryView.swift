@@ -11,6 +11,7 @@ struct LibraryView: View {
     @State var albums: [String] = ["evermore", "drivers license", "folklore"]
     @State var artists: [String] = ["Taylor Swift", "Olivia Rodrigo", "Taylor Swift"]
     @State var songList: [String: String] = ["willow":"evermore", "champagne problems":"evermore", "gold rush":"evermore"]
+    @State var openAlbum: [String] = ["evermore", "Taylor Swift"]
     var columns: [GridItem] = [
         GridItem(.fixed(125), spacing: 20),
         GridItem(.fixed(125), spacing: 20),
@@ -19,37 +20,49 @@ struct LibraryView: View {
     @State var selection: String?
     @State var albumNameBinding: String?
     var body: some View {
-        ScrollView {
-            NavigationView {
+        HStack {
+//          albums
+            ScrollView {
                 LazyVGrid(columns: columns, alignment: .leading) {
                     ForEach(0..<albums.count, id: \.self) { album in
-                        NavigationLink(destination: AlbumView(albumName: $albums[album], artistName: $artists[album], albumList: $albums, songList: $songList), tag: String(album), selection: $selection, label: {
+                        Button(action: {
+                            openAlbum.removeAll()
+                            openAlbum.append(albums[album])
+                            openAlbum.append(artists[album])
+                        }, label: {
+                            VStack(alignment: .leading) {
+                                ZStack {
+                                    Image("AlbumArt").resizable()
+                                        .frame(width: 125, height: 125)
+                                        .scaledToFit()
+                                        .cornerRadius(5.0)
+                                    Image(albums[album]).resizable()
+                                        .frame(width: 125, height: 125)
+                                        .scaledToFit()
+                                        .cornerRadius(5.0)
+                                }
                                 VStack(alignment: .leading) {
-                                    ZStack {
-                                        Image("AlbumArt").resizable()
-                                            .frame(width: 125, height: 125)
-                                            .scaledToFit()
-                                            .cornerRadius(5.0)
-                                        Image(albums[album]).resizable()
-                                            .frame(width: 125, height: 125)
-                                            .scaledToFit()
-                                            .cornerRadius(12.0)
-                                    }
-                                    VStack(alignment: .leading) {
-                                        Text(artists[album])
-                                            .fontWeight(.semibold)
-                                            .foregroundColor(.primary)
-                                        Text(albums[album])
-                                            .foregroundColor(.secondary)
+                                    Text(albums[album])
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.primary)
+                                    Text(artists[album])
+                                        .foregroundColor(.secondary)
                                     }
                                 }
                             })
                             .buttonStyle(BorderlessButtonStyle())
                         }
-                    }
-                    .padding()
+                }
+                .padding()
             }
+            .onAppear {
+                openAlbum.append(albums[0])
+                openAlbum.append(artists[0])
+            }
+            Divider()
+            AlbumView(albumName: $openAlbum[0], artistName: $openAlbum[1], albumList: $albums, songList: $songList)
         }
+        .frame(minWidth: 750)
     }
 }
 
@@ -92,5 +105,6 @@ struct AlbumView: View {
                 .padding(.leading)
             }
         }
+        .frame(minWidth: 250)
     }
 }

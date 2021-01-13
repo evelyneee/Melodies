@@ -37,6 +37,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(SidebarListStyle())
+            .frame(minWidth: 200)
         }
     }
 }

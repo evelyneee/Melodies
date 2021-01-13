@@ -94,7 +94,7 @@ struct NowPlayingView: View {
                 })
                 .buttonStyle(CoolButtonStyle())
             }
-            .frame(width: 250)
+            .frame(maxWidth: 250)
         }
 
     }
