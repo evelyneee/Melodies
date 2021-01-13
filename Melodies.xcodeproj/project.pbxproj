@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3233AF0025AE15D200DF9FC1 /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3233AEFF25AE15D200DF9FC1 /* NowPlayingView.swift */; };
 		324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF1525AA67480090E930 /* MelodiesApp.swift */; };
 		324CAF1825AA67480090E930 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF1725AA67480090E930 /* ContentView.swift */; };
 		324CAF1A25AA674A0090E930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324CAF1925AA674A0090E930 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3233AEFF25AE15D200DF9FC1 /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
 		324CAF1225AA67480090E930 /* Melodies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melodies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324CAF1525AA67480090E930 /* MelodiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodiesApp.swift; sourceTree = "<group>"; };
 		324CAF1725AA67480090E930 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				324CAF1525AA67480090E930 /* MelodiesApp.swift */,
 				324CAF1725AA67480090E930 /* ContentView.swift */,
+				3233AEFF25AE15D200DF9FC1 /* NowPlayingView.swift */,
 				324CAF4A25AA679F0090E930 /* LibraryView.swift */,
 				324CAF1925AA674A0090E930 /* Assets.xcassets */,
 				324CAF1E25AA674A0090E930 /* Info.plist */,
@@ -276,6 +279,7 @@
 			files = (
 				324CAF1825AA67480090E930 /* ContentView.swift in Sources */,
 				324CAF4B25AA679F0090E930 /* LibraryView.swift in Sources */,
+				3233AF0025AE15D200DF9FC1 /* NowPlayingView.swift in Sources */,
 				324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
