@@ -51,6 +51,7 @@ struct NowPlayingView: View {
 //          Time slider
             Slider(value: $currentPositionInSong, in:0.0...180.0)
                 .accentColor(Color.white)
+                .foregroundColor(Color.white)
                 .onReceive(timer) { input in
                     if playing {
                         currentPositionInSong = currentPositionInSong + 1
