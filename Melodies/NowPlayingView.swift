@@ -50,8 +50,6 @@ struct NowPlayingView: View {
             .frame(width: 250)
 //          Time slider
             Slider(value: $currentPositionInSong, in:0.0...180.0)
-                .accentColor(Color.white)
-                .foregroundColor(Color.white)
                 .onReceive(timer) { input in
                     if playing {
                         currentPositionInSong = currentPositionInSong + 1
@@ -61,7 +59,7 @@ struct NowPlayingView: View {
 //          Controls
             HStack {
                 Button(action: {
-                    
+                    currentPositionInSong = 0.0
                 }, label: {
                     Image(systemName: "backward.fill")
                         .font(.system(size: 30))
@@ -84,9 +82,11 @@ struct NowPlayingView: View {
                             .shadow(radius: 3)
                     }
                 })
+                .frame(width: 45, height: 45)
+                .scaledToFit()
                 .buttonStyle(CoolButtonStyle())
                 Button(action: {
-                    
+                    currentPositionInSong = 0.0
                 }, label: {
                     Image(systemName: "forward.fill")
                         .font(.system(size: 30))
@@ -97,6 +97,6 @@ struct NowPlayingView: View {
             }
             .frame(maxWidth: 250)
         }
-
+        .frame(minWidth: 800, minHeight: 550)
     }
 }

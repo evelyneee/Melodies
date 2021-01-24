@@ -15,6 +15,9 @@
 		324CAF2925AA674B0090E930 /* MelodiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF2825AA674B0090E930 /* MelodiesTests.swift */; };
 		324CAF3425AA674B0090E930 /* MelodiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF3325AA674B0090E930 /* MelodiesUITests.swift */; };
 		324CAF4B25AA679F0090E930 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324CAF4A25AA679F0090E930 /* LibraryView.swift */; };
+		3262DD9725B6620F00000C4D /* backendCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262DD9625B6620F00000C4D /* backendCore.swift */; };
+		3262DD9C25B6622300000C4D /* backendVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3262DD9B25B6622300000C4D /* backendVars.swift */; };
+		328BBC8625BCA8E50093DF00 /* RecommendedTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328BBC8525BCA8E50093DF00 /* RecommendedTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		324CAF3525AA674B0090E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324CAF4A25AA679F0090E930 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		324CAF5125AA82DC0090E930 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		3262DD9625B6620F00000C4D /* backendCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backendCore.swift; sourceTree = "<group>"; };
+		3262DD9B25B6622300000C4D /* backendVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backendVars.swift; sourceTree = "<group>"; };
+		328BBC8525BCA8E50093DF00 /* RecommendedTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTab.swift; sourceTree = "<group>"; };
 		32B9574B25AF546B0058B3BA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -107,6 +113,9 @@
 				324CAF1725AA67480090E930 /* ContentView.swift */,
 				3233AEFF25AE15D200DF9FC1 /* NowPlayingView.swift */,
 				324CAF4A25AA679F0090E930 /* LibraryView.swift */,
+				328BBC8525BCA8E50093DF00 /* RecommendedTab.swift */,
+				3262DD9625B6620F00000C4D /* backendCore.swift */,
+				3262DD9B25B6622300000C4D /* backendVars.swift */,
 				324CAF1925AA674A0090E930 /* Assets.xcassets */,
 				324CAF1E25AA674A0090E930 /* Info.plist */,
 				324CAF1F25AA674A0090E930 /* Melodies.entitlements */,
@@ -279,10 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3262DD9C25B6622300000C4D /* backendVars.swift in Sources */,
+				3262DD9725B6620F00000C4D /* backendCore.swift in Sources */,
 				324CAF1825AA67480090E930 /* ContentView.swift in Sources */,
 				324CAF4B25AA679F0090E930 /* LibraryView.swift in Sources */,
 				3233AF0025AE15D200DF9FC1 /* NowPlayingView.swift in Sources */,
 				324CAF1625AA67480090E930 /* MelodiesApp.swift in Sources */,
+				328BBC8625BCA8E50093DF00 /* RecommendedTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,61 +8,74 @@
 import SwiftUI
 
 struct LibraryView: View {
-    @State var albums: [String] = ["evermore", "drivers license", "folklore"]
-    @State var artists: [String] = ["Taylor Swift", "Olivia Rodrigo", "Taylor Swift"]
-    @State var songList: [String: String] = ["willow":"evermore", "champagne problems":"evermore", "gold rush":"evermore"]
+    @State var albums: [String] = []
+    @State var artists: [String] = []
+    @State var songList: [String: String] = [:]
     @State var openAlbum: [String] = ["evermore", "Taylor Swift"]
     var columns: [GridItem] = [
-        GridItem(.fixed(125), spacing: 20),
-        GridItem(.fixed(125), spacing: 20),
-        GridItem(.fixed(125), spacing: 20)
+        GridItem(.fixed(125), spacing: 25),
+        GridItem(.fixed(125), spacing: 25),
+        GridItem(.fixed(125), spacing: 25)
     ]
-    @State var selection: String?
+    @State private var selectedAlbum = Album()
     @State var albumNameBinding: String?
     var body: some View {
         HStack {
 //          albums
             ScrollView {
-                LazyVGrid(columns: columns, alignment: .leading) {
-                    ForEach(0..<albums.count, id: \.self) { album in
-                        Button(action: {
-                            openAlbum.removeAll()
-                            openAlbum.append(albums[album])
-                            openAlbum.append(artists[album])
-                        }, label: {
-                            VStack(alignment: .leading) {
-                                ZStack {
-                                    Image("AlbumArt").resizable()
-                                        .frame(width: 125, height: 125)
-                                        .scaledToFit()
-                                        .cornerRadius(5.0)
-                                    Image(albums[album]).resizable()
-                                        .frame(width: 125, height: 125)
-                                        .scaledToFit()
-                                        .cornerRadius(5.0)
-                                }
+                VStack(alignment: .leading) {
+                    Text("Recently Added")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.top)
+                        .padding(.leading)
+                    LazyVGrid(columns: columns, alignment: .leading) {
+                        ForEach(0..<albums.count, id: \.self) { album in
+                            Button(action: {
+                                openAlbum.removeAll()
+                                openAlbum.append(albums[album])
+                                openAlbum.append(artists[album])
+                            }) {
                                 VStack(alignment: .leading) {
-                                    Text(albums[album])
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(.primary)
-                                    Text(artists[album])
-                                        .foregroundColor(.secondary)
+                                    ZStack {
+                                        Image("AlbumArt").resizable()
+                                            .frame(width: 125, height: 125)
+                                            .scaledToFit()
+                                            .cornerRadius(5.0)
+                                        Image(albums[album]).resizable()
+                                            .frame(width: 125, height: 125)
+                                            .scaledToFit()
+                                            .cornerRadius(5.0)
+                                        }
+                                    VStack(alignment: .leading) {
+                                        Text(albums[album])
+                                            .foregroundColor(Color.primary)
+                                            .fontWeight(.semibold)
+                                        Text(artists[album])
                                     }
                                 }
-                            })
+                            }
+                            .padding(.bottom, 5)
                             .buttonStyle(BorderlessButtonStyle())
                         }
+                    }
+                    .padding()
                 }
-                .padding()
-            }
-            .onAppear {
-                openAlbum.append(albums[0])
-                openAlbum.append(artists[0])
+                
             }
             Divider()
             AlbumView(albumName: $openAlbum[0], artistName: $openAlbum[1], albumList: $albums, songList: $songList)
         }
-        .frame(minWidth: 750)
+        .onAppear {
+            albums = savedAlbums
+            artists = savedArtists
+            songList = savedSongList
+            openAlbum.append(selectedAlbum.albumName)
+            openAlbum.append(artists[0])
+            print(openAlbum)
+            print(selectedAlbum.albumName)
+        }
+        .frame(minWidth: 800, minHeight: 550)
     }
 }
 
@@ -78,7 +91,7 @@ struct AlbumView: View {
                     Image(albumName).resizable()
                         .frame(width: 100, height: 100)
                         .scaledToFit()
-                        .cornerRadius(10, antialiased: true)
+                        .cornerRadius(7, antialiased: true)
                         .shadow(radius: 10)
                     VStack(alignment: .leading) {
                         Text(albumName)
@@ -94,10 +107,10 @@ struct AlbumView: View {
                 }
                 .padding()
                 Spacer()
-                ForEach(songList.sorted(by: >), id: \.key) { key, song in
+                ForEach(0..<filterSongList(completeList: songList, forAlbum: albumName).count, id: \.self) { song in
                     HStack {
                         Image(systemName: "play.fill")
-                        Text(key)
+                        Text(filterSongList(completeList: songList, forAlbum: albumName)[song])
                             .padding(.leading)
                     }
                     .padding(5)
